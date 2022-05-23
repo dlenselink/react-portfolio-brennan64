@@ -1,0 +1,30 @@
+.about-text p {
+  text-indent: 3%;
+  line-height: 2;
+  padding: 2%;
+}
+
+.img-folder {
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1520699670403-1358620dc42e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070");
+}
+
+div p {
+  background-color: rgb(144, 144, 141);
+  opacity: 99%;
+  border-radius: 1em;
+  padding: 1%;
+  margin: 1%;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+div h1 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 77pt;
+}
