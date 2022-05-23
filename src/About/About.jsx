@@ -7,7 +7,7 @@ export const About = () => (
   <div className="about-text">
     <h1>About Me</h1>
     <p>
-      Hello World! My name is Brennan Heley. I am a full stack software developer specialising in
+      {`Hello World! My name is Brennan Heley. I am a full stack software developer specialising in
       front end and JS. I am currently seeking employment in the software field. I spend most of my
       free time walking my dogs, disc golfing, or camping. I am engaged to be married this November
       so that also eats up a lot of time for planning! My dogs are both rescues and are mixes of
@@ -21,7 +21,7 @@ export const About = () => (
       job. I figured the structure and support would help further my education in a more serious
       way. It has been a blast to learn about so much new (to me) technology. I am set to graduate
       on June 6th and will be able to start working ASAP after that date. My main goals after class
-      are to learn and repay my fiancee for her support during my schooling.
+      are to learn and repay my fiancee for her support during my schooling.`}
     </p>
     <div className="img-folder">
       <img src={walkingCouple} alt="happy-couple" />

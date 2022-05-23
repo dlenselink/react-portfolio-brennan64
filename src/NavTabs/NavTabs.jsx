@@ -8,7 +8,6 @@ export const NavTabs = ({ currentPage, handlePageChange }) => (
         href="#home"
         onClick={() => handlePageChange('Home')}
         //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
         className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
       >
         Home
@@ -19,7 +18,6 @@ export const NavTabs = ({ currentPage, handlePageChange }) => (
         href="#about"
         onClick={() => handlePageChange('About')}
         //  TODO: Add a comment explaining what this logic is doing
-
         className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
       >
         About
@@ -41,7 +39,6 @@ export const NavTabs = ({ currentPage, handlePageChange }) => (
         href="#resume"
         onClick={() => handlePageChange('Resume')}
         //  TODO: Add a comment explaining what this logic is doing
-
         className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
       >
         Resume
@@ -51,7 +48,6 @@ export const NavTabs = ({ currentPage, handlePageChange }) => (
       <a
         href="#contact"
         //  TODO: Add a comment explaining what this logic is doing
-
         onClick={() => handlePageChange('Contact')}
         className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
       >

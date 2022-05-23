@@ -21,13 +21,9 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "parser": "@babel/eslint-parser",
     "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:jsx-a11y/recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:jest/recommended",
-      "plugin:testing-library/react"
+      "react-app"
     ],
     "plugins": [
       "import"
@@ -49,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-import": "^2.26.0",
     "sass": "^1.52.1"
   }
 }
