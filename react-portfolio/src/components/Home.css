@@ -17,3 +17,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+.mainFooter {
+  display: inline-block;
+  background-image: linear-gradient(black, rgb(98, 56, 56));
+  border-radius: 1em;
+  font-size: 33pt;
+  justify-content: space-between;
+  padding: 2%;
+}

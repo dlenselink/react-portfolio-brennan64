@@ -4,12 +4,11 @@ import Home from "./Home";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
-  // TODO: Add a comment describing the functionality of this method
-  // an if statement to route the front end page
   const renderPage = () => {
     if (currentPage === "Home") {
       return <Home />;
@@ -19,6 +18,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
     }
     return <Contact />;
   };

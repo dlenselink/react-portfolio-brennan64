@@ -9,9 +9,9 @@ export default function Home() {
         <h1>Brennan M. Heley</h1>
       </header>
       <img src={profilePic} alt="profile-picture" />
-      <footer>
-        {" "}
-        <p>This Portfolio is made with React.</p>
+      <footer className="mainFooter">
+        <a href="https://github.com/brennan64">GitHub</a> ||
+        <a href="https://www.linkedin.com/in/brennan-heley/">Linkedin</a>
       </footer>
     </div>
   );

@@ -1,24 +1,54 @@
 import React from "react";
+import weatherApp from "../assets/weather-app.PNG";
+import regExTutorial from "../assets/regex-tutorial.PNG";
+import sportsFinder from "../assets/sports-finder.PNG";
+import codeQuiz from "../assets/code-quiz.PNG";
+import teamProfGen from "../assets/team-prof-generator.PNG";
+import techBlog from "../assets/tech-login-page.PNG";
+import "./Portfolio.css";
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className="container-fluid project-grid ">
+      <h1>Portfolio, Click Images to view project</h1>
+      <div className="row">
+        <div className="col">
+          <a href="https://brennan64.github.io/weather-app/">
+            <img src={weatherApp} alt="weather application, api project" />
+          </a>
+          <a href="https://gist.github.com/brennan64/ac37b9b9cb8cfa2bdec7b6db371c0e5c">
+            <img
+              src={regExTutorial}
+              alt="Reg Ex Tutorial, educational markdown page."
+            />
+          </a>
+        </div>
+        <div className="col">
+          <a href="https://fchang1720.github.io/Sporting-Event-Finder/">
+            <img
+              src={sportsFinder}
+              alt="sports finder, a group project that uses multiple apis."
+            />
+          </a>
+          <a href="https://brennan64.github.io/CodingQuiz/">
+            <img src={codeQuiz} alt="Timed Javascript coding quiz" />
+          </a>
+        </div>
+        <div className="col">
+          <a href="https://github.com/brennan64/team-profile-generator">
+            <img
+              src={teamProfGen}
+              alt="Command line application that creates a web template for a team profile."
+            />
+          </a>
+          <a href="https://frozen-bayou-00211.herokuapp.com/">
+            <img
+              src={techBlog}
+              alt="tech blog application with login and commenting functionality"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
