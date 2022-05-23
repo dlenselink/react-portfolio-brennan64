@@ -1,3 +1,8 @@
+label {
+  color: aliceblue;
+  font-size: 33pt;
+}
+
 .inputs {
   display: flex;
   justify-content: center;
@@ -5,15 +10,10 @@
   background-image: linear-gradient(black, rgb(98, 56, 56));
   border-radius: 1em;
   padding: 2%;
-}
 
-label {
-  color: aliceblue;
-  font-size: 33pt;
-}
-
-.inputs input {
-  margin: 2%;
+  input {
+    margin: 2%;
+  }
 }
 
 .contact h1 {

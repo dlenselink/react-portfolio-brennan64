@@ -24,7 +24,7 @@ export const About = () => (
       are to learn and repay my fiancee for her support during my schooling.`}
     </p>
     <div className="img-folder">
-      <img src={walkingCouple} alt="happy-couple" />
+      <img src={walkingCouple} alt="Happy couple" />
       <img src={ellaEars} alt="Eleanor the dog" />
       <img src={gordySmile} alt="Gordon the dog" />
     </div>

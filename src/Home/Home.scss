@@ -1,14 +1,11 @@
-img {
-  margin: 2%;
-  max-width: 300px;
-  border-radius: 1em;
-}
 body {
   background-image: url('https://images.unsplash.com/photo-1520699670403-1358620dc42e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070');
 }
 
-.nav {
-  background-color: rgb(59, 58, 57);
+img {
+  margin: 2%;
+  max-width: 300px;
+  border-radius: 1em;
 }
 
 .home-frame {
@@ -25,4 +22,8 @@ body {
   font-size: 33pt;
   justify-content: space-between;
   padding: 2%;
+}
+
+.nav {
+  background-color: rgb(59, 58, 57);
 }

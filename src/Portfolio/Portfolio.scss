@@ -1,18 +1,18 @@
 .project-grid {
   margin-top: 2%;
-}
 
-.project-grid img {
-  margin: 10%;
-  margin-left: 12%;
-}
+  h1 {
+    font-size: 55pt;
+    background-image: linear-gradient(black, rgb(98, 56, 56));
+    border-radius: 1em;
+  }
 
-.project-grid img:hover {
-  transform: scale(1.75);
-}
+  img {
+    margin: 10%;
+    margin-left: 12%;
 
-.project-grid h1 {
-  font-size: 55pt;
-  background-image: linear-gradient(black, rgb(98, 56, 56));
-  border-radius: 1em;
+    &:hover {
+      transform: scale(1.75);
+    }
+  }
 }
