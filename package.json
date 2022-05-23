@@ -31,7 +31,10 @@
     ],
     "plugins": [
       "import"
-    ]
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "browserslist": {
     "production": [
