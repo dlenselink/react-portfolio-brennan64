@@ -22,7 +22,12 @@ export default function Contact() {
             Message:
             <input type="text" name="message" />
           </label>
-          <button type="submit" type="submit" className="btn-success btn-lg">
+          <button
+            type="submit"
+            name="submitButton"
+            type="submit"
+            className="btn-success btn-lg"
+          >
             Submit
           </button>
         </form>
