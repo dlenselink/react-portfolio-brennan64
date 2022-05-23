@@ -1,58 +1,64 @@
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
-// import './NavTabs.scss';
+import './NavTabs.scss';
+import { useNavigate, useLocation } from 'react-router-dom';
+import clsx from 'clsx';
+import Nav from 'react-bootstrap/Nav';
 
-export const NavTabs = ({ currentPage, handlePageChange }) => (
-  <ul className=" nav nav-tabs d-flex justify-content-end ">
-    <li className="nav-item">
-      <a
-        href="#home"
-        onClick={() => handlePageChange('Home')}
-        //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-        className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+export const NavTabs = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleNavigate = (path) => () => {
+    navigate(path || '/');
+  };
+
+  console.log(location);
+
+  return (
+    <Nav className="justify-content-center">
+      <Nav.Item
+        onClick={handleNavigate('/home')}
+        className={clsx({
+          'nav-item': true,
+          active: location.pathname === '/home',
+        })}
       >
-        Home
-      </a>
-    </li>
-    <li className="nav-item">
-      <a
-        href="#about"
-        onClick={() => handlePageChange('About')}
-        //  TODO: Add a comment explaining what this logic is doing
-        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        <Nav.Link>Home</Nav.Link>
+      </Nav.Item>
+      <Nav.Item
+        onClick={handleNavigate('/about')}
+        className={clsx({
+          'nav-item': true,
+          active: location.pathname === '/about',
+        })}
       >
-        About
-      </a>
-    </li>
-    <li className="nav-item">
-      <a
-        href="#portfolio"
-        onClick={() => handlePageChange('Portfolio')}
-        //  TODO: Add a comment explaining what this logic is doing
-        // ternary operator to check if nav link is active or not, aka if you are on this page or not for styling reasons
-        className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+        <Nav.Link>About</Nav.Link>
+      </Nav.Item>
+      <Nav.Item
+        onClick={handleNavigate('/portfolio')}
+        className={clsx({
+          'nav-item': true,
+          active: location.pathname === '/portfolio',
+        })}
       >
-        Portfolio
-      </a>
-    </li>
-    <li className="nav-item">
-      <a
-        href="#resume"
-        onClick={() => handlePageChange('Resume')}
-        //  TODO: Add a comment explaining what this logic is doing
-        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        <Nav.Link>Portfolio</Nav.Link>
+      </Nav.Item>
+      <Nav.Item
+        onClick={handleNavigate('/resume')}
+        className={clsx({
+          'nav-item': true,
+          active: location.pathname === '/resume',
+        })}
       >
-        Resume
-      </a>
-    </li>
-    <li className="nav-item">
-      <a
-        href="#contact"
-        //  TODO: Add a comment explaining what this logic is doing
-        onClick={() => handlePageChange('Contact')}
-        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+        <Nav.Link>Resume</Nav.Link>
+      </Nav.Item>
+      <Nav.Item
+        onClick={handleNavigate('/contact')}
+        className={clsx({
+          'nav-item': true,
+          active: location.pathname === '/contact',
+        })}
       >
-        Contact
-      </a>
-    </li>
-  </ul>
-);
+        <Nav.Link>Contact</Nav.Link>
+      </Nav.Item>
+    </Nav>
+  );
+};
