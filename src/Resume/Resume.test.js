@@ -4,7 +4,6 @@ import { Resume } from '../Resume';
 describe('<Resume />', () => {
   it('should render with all expected assets', () => {
     const { getByTestId, getByAltText } = render(<Resume />);
-
     expect(getByAltText('resume preview')).toBeInTheDocument();
 
     const resumeGithubLink = getByTestId('resume-github');

@@ -1,6 +1,6 @@
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import { renderWithWrapper } from '../testUtils';
+import { renderWithWrapper } from '../utils';
 import { App } from '../App';
 import { NavTabs } from './NavTabs';
 
