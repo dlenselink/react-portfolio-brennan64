@@ -14,18 +14,18 @@ jest.mock('react-router-dom', () => ({
 describe('<NavTabs />', () => {
   it('should correctly render all nav links', () => {
     const { getAllByTestId } = renderWithWrapper(<NavTabs />);
-    const navLinks = getAllByTestId(/nav-/i);
+    const navLinks = getAllByTestId(/nav-link/);
     expect(navLinks.length).toBe(5);
   });
 
   it('should navigate to /about', () => {
     const { getByTestId } = render(<App />);
     const navLinks = [
-      ['nav-about', '/about'],
-      ['nav-portfolio', '/portfolio'],
-      ['nav-resume', '/resume'],
-      ['nav-contact', '/contact'],
-      ['nav-home', '/home'],
+      ['nav-link-about', '/about'],
+      ['nav-link-portfolio', '/portfolio'],
+      ['nav-link-resume', '/resume'],
+      ['nav-link-contact', '/contact'],
+      ['nav-link-home', '/home'],
     ];
 
     navLinks.forEach(([testId, path], idx) => {
@@ -36,7 +36,5 @@ describe('<NavTabs />', () => {
       expect(mockedNavigate).toHaveBeenCalledTimes(idx + 1);
       expect(mockedNavigate).toHaveBeenLastCalledWith(path);
     });
-
-    fireEvent.click(getByTestId('nav-about'));
   });
 });
