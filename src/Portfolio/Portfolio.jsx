@@ -12,29 +12,38 @@ export const Portfolio = () => (
     <h1>Portfolio, Click Images to view project</h1>
     <div className="row">
       <div className="col">
-        <a href="https://brennan64.github.io/weather-app/">
+        <a href="https://brennan64.github.io/weather-app/" data-testid="portfolio-weather-app">
           <img src={weatherApp} alt="weather application, api project" />
         </a>
-        <a href="https://gist.github.com/brennan64/ac37b9b9cb8cfa2bdec7b6db371c0e5c">
+        <a
+          href="https://gist.github.com/brennan64/ac37b9b9cb8cfa2bdec7b6db371c0e5c"
+          data-testid="portfolio-regex-tutorial"
+        >
           <img src={regExTutorial} alt="Reg Ex Tutorial, educational markdown page." />
         </a>
       </div>
       <div className="col">
-        <a href="https://fchang1720.github.io/Sporting-Event-Finder/">
+        <a
+          href="https://fchang1720.github.io/Sporting-Event-Finder/"
+          data-testid="portfolio-sporting-event-finder"
+        >
           <img src={sportsFinder} alt="sports finder, a group project that uses multiple apis." />
         </a>
-        <a href="https://brennan64.github.io/CodingQuiz/">
+        <a href="https://brennan64.github.io/CodingQuiz/" data-testid="portfolio-coding-quiz">
           <img src={codeQuiz} alt="Timed Javascript coding quiz" />
         </a>
       </div>
       <div className="col">
-        <a href="https://github.com/brennan64/team-profile-generator">
+        <a
+          href="https://github.com/brennan64/team-profile-generator"
+          data-testid="portfolio-team-profile-generator"
+        >
           <img
             src={teamProfGen}
             alt="Command line application that creates a web template for a team profile."
           />
         </a>
-        <a href="https://frozen-bayou-00211.herokuapp.com/">
+        <a href="https://frozen-bayou-00211.herokuapp.com/" data-testid="portfolio-tech-blog">
           <img src={techBlog} alt="tech blog application with login and commenting functionality" />
         </a>
       </div>

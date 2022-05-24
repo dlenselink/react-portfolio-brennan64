@@ -6,12 +6,12 @@ describe('<Home />', () => {
     const { getByTestId, getByText } = render(<Home />);
     expect(getByText(/Brennan M\. Heley/i)).toBeInTheDocument();
 
-    const githubLink = getByTestId('home-github');
-    expect(githubLink).toBeInTheDocument();
-    expect(githubLink).toHaveAttribute('href', 'https://github.com/brennan64');
+    const homeGithubLink = getByTestId('home-github');
+    expect(homeGithubLink).toBeInTheDocument();
+    expect(homeGithubLink).toHaveAttribute('href', 'https://github.com/brennan64');
 
-    const linkedinLink = getByTestId('home-linkedin');
-    expect(linkedinLink).toBeInTheDocument();
-    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/brennan-heley/');
+    const homeLinkedinLink = getByTestId('home-linkedin');
+    expect(homeLinkedinLink).toBeInTheDocument();
+    expect(homeLinkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/brennan-heley/');
   });
 });
