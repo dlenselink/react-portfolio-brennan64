@@ -13,12 +13,9 @@ describe('<Portfolio />', () => {
       const href = link.getAttribute('href');
       expect(isValidUrl(href)).toBe(true);
 
-      // link should be present
+      // link image should be present
       const linkImage = link.querySelector('img');
       expect(linkImage).toBeInTheDocument();
-
-      // const linkUrl = linkImage.getAttribute('href');
-      // expect(isValidUrl(linkUrl)).toBe(true);
     });
   });
 });

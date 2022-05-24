@@ -18,7 +18,7 @@ describe('<NavTabs />', () => {
     expect(navLinks.length).toBe(5);
   });
 
-  it('should navigate to /about', () => {
+  it('should allow navigation to all pages without error', () => {
     const { getByTestId } = render(<App />);
     const navLinks = [
       ['nav-link-about', '/about'],
