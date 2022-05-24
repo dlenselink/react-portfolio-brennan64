@@ -4,9 +4,9 @@ import ellaEars from '../assets/ella-ears.jpg';
 import gordySmile from '../assets/gordy-smile.jpg';
 
 export const About = () => (
-  <div className="about-text">
+  <div className="about">
     <h1>About Me</h1>
-    <p>
+    <p data-testid="about-text">
       {`Hello World! My name is Brennan Heley. I am a full stack software developer specialising in
       front end and JS. I am currently seeking employment in the software field. I spend most of my
       free time walking my dogs, disc golfing, or camping. I am engaged to be married this November
