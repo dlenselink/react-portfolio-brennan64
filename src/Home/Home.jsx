@@ -8,8 +8,13 @@ export const Home = () => (
     </header>
     <img src={profilePic} alt="profile" />
     <footer className="mainFooter">
-      <a href="https://github.com/brennan64">GitHub</a> ||
-      <a href="https://www.linkedin.com/in/brennan-heley/">Linkedin</a>
+      <a href="https://github.com/brennan64" data-testid="home-github">
+        GitHub
+      </a>
+      ||
+      <a href="https://www.linkedin.com/in/brennan-heley/" data-testid="home-linkedin">
+        Linkedin
+      </a>
     </footer>
   </div>
 );
